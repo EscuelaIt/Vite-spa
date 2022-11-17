@@ -2,3 +2,8 @@ body {
   margin: 0;
   font-family: verdana, sans-serif;
 }
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+}

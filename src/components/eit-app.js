@@ -2,6 +2,7 @@ import { LitElement, html, css } from 'lit';
 import { installRouter } from 'pwa-helpers/router.js';
 import '@dile/dile-nav/dile-nav.js';
 import '@dile/dile-card/dile-card';
+import './fct-pwa';
 
 export class EitApp extends LitElement {
     static styles = [
@@ -59,7 +60,7 @@ export class EitApp extends LitElement {
                 </div>    
             </dile-card>
 
-            
+            <fct-pwa></fct-pwa>
         `;
     }
 
