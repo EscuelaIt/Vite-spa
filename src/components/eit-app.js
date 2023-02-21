@@ -3,6 +3,9 @@ import { installRouter } from 'pwa-helpers/router.js';
 import '@dile/dile-nav/dile-nav.js';
 import '@dile/dile-card/dile-card';
 import './fct-pwa';
+import { enviroment } from '../enviroment.js';
+
+console.log('---', enviroment.BACKEND_URL, enviroment.PUSHER_KEY);
 
 export class EitApp extends LitElement {
     static styles = [
@@ -42,6 +45,7 @@ export class EitApp extends LitElement {
 
     render() {
         return html`
+        
             <dile-nav>
                 <span slot="title">EIT App</span>
                 <span slot="menu">[X]</span>
